@@ -5,7 +5,7 @@ import time
 
 # Read configuration parameters from a configuration file
 def read_config():
-    config = {}
+    config = {} #We initalized it as a Dictionary
     with open("server_config.txt", "r") as file:
         for line in file:
             key, value = line.strip().split('=')
